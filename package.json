@@ -1,0 +1,21 @@
+{
+  "name": "typescript-starter-2019",
+  "version": "1.0.0",
+  "description": "A REST API service, a WebSocket server, and a React/Redux frontend with shared types [ES6-flavored TypeScript, FuseBox]",
+  "main": "index.js",
+  "repository": "git@github.com:Originate/typescript-starter-2019.git",
+  "author": "Hao Lian <hi@haolian.org>",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "fix": "prettier --write \"packages/**/*.{ts,js,jsx}\" > /dev/null",
+    "backend/start": "yarn workspace @project/backend start"
+  },
+  "devDependencies": {
+    "prettier": "^1.15.3",
+    "typescript": "^3.2.1"
+  },
+  "private": true
+}
