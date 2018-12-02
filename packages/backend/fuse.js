@@ -5,6 +5,7 @@ const fuse = FuseBox.init({
   target: 'server',
   output: 'dist/$name.js',
   useTypescriptCompiler: true,
+  experimentalFeatures: true,
   sourceMaps: true,
   log: false,
   tsConfig: '../../tsconfig.json',
@@ -13,6 +14,6 @@ const fuse = FuseBox.init({
 fuse
   .bundle('server-bundle')
   .instructions('> [index.ts]')
-  .watch()
-  .completed(proc => proc.start());
+  .watch('src/**')
+  .completed(proc => {console.debug(proc.node);setTimeout(() => proc.start(), 1000)});
 fuse.run();

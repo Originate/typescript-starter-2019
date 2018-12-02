@@ -9,10 +9,6 @@
   "workspaces": [
     "packages/*"
   ],
-  "scripts": {
-    "fix": "prettier --write \"packages/**/*.{ts,js,jsx}\" > /dev/null",
-    "backend/start": "yarn workspace @project/backend start"
-  },
   "devDependencies": {
     "prettier": "^1.15.3",
     "typescript": "^3.2.1"

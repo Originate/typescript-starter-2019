@@ -3,17 +3,19 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "yarn node fuse.js"
+    "start": "node fuse.js"
   },
   "devDependencies": {
     "@types/dotenv": "^6.1.0",
     "@types/koa": "^2.0.47",
+    "@types/koa-logger": "^3.1.1",
     "@types/koa-router": "^7.0.35",
     "fuse-box": "^3.6.0"
   },
   "dependencies": {
     "dotenv": "^6.1.0",
     "koa": "^2.6.2",
+    "koa-logger": "^3.2.0",
     "koa-router": "^7.4.0"
   }
 }
